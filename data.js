@@ -8,7 +8,13 @@ export const jobs = [
         type: "Full-time",
         description: "Build modern UI using React.",
         status: "all"
+
+
+
     },
+
+
+
     {
         id: 2,
         companyName: "Microsoft",
@@ -19,6 +25,8 @@ export const jobs = [
         description: "Develop secure REST APIs.",
         status: "all"
     },
+
+
     {
         id: 3,
         companyName: "Tesla",
@@ -29,6 +37,8 @@ export const jobs = [
         description: "Automation system development.",
         status: "all"
     },
+
+
     {
         id: 4,
         companyName: "Amazon",
@@ -39,6 +49,9 @@ export const jobs = [
         description: "E-commerce platform features.",
         status: "all"
     },
+
+
+
     {
         id: 5,
         companyName: "Meta",
@@ -49,6 +62,9 @@ export const jobs = [
         description: "Social platform UI development.",
         status: "all"
     },
+
+
+
     {
         id: 6,
         companyName: "Netflix",
@@ -59,6 +75,8 @@ export const jobs = [
         description: "Streaming performance optimization.",
         status: "all"
     },
+
+
     {
         id: 7,
         companyName: "Spotify",
@@ -69,6 +87,9 @@ export const jobs = [
         description: "Music app UI improvements.",
         status: "all"
     },
+
+
+
     {
         id: 8,
         companyName: "Adobe",
