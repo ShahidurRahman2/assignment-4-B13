@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <title>Job Application Dashboard</title>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
+
+
 
 <body class="bg-gray-100 p-6">
 
+
+
     <h1 class="text-3xl font-bold mb-6">Job Application Dashboard</h1>
-
-
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 text-center">
 
         <div class="bg-white p-4 rounded shadow">
@@ -24,10 +26,13 @@
         </div>
 
 
+
         <div class="bg-white p-4 rounded shadow">
             <h2 class="font-bold text-green-600">Interview</h2>
             <p id="interview-count" class="text-2xl">0</p>
         </div>
+
+
 
 
         <div class="bg-white p-4 rounded shadow">
@@ -39,10 +44,14 @@
     </div>
 
 
+
+
     <div class="flex justify-between items-center mb-4">
         <h2 class="text-xl font-bold">Available Jobs</h2>
         <span class="font-bold">Total: <span id="job-count">0</span></span>
     </div>
+
+
 
 
     <div class="flex gap-3 mb-6">
@@ -52,7 +61,10 @@
     </div>
 
 
+
     <div id="job-container" class="grid grid-cols-1 w-full gap-4"></div>
+
+
 
 
     <script type="module" src="./index.js"></script>
