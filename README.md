@@ -11,3 +11,11 @@ To create and insert a new element:
 Create the element using document.createElement()
 
 Add content (textContent or innerHTML)
+
+***. What is Event Bubbling?**
+
+Event bubbling means the event starts from the clicked element and moves up to its parent elements.
+
+***. What is Event Delegation? Why is it useful?**
+
+Event delegation means adding one event listener to a parent instead of multiple child element
