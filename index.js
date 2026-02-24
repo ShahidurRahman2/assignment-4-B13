@@ -2,14 +2,14 @@ import { jobs } from "./data.js";
 
 let currentTab = "all";
 
-// ================= RENDER =================
+
 function renderJobs(list) {
   const container = document.getElementById("job-container");
   container.innerHTML = "";
 
   document.getElementById("job-count").innerText = list.length;
 
-  // EMPTY STATE
+
   if (list.length === 0) {
     container.innerHTML = `
       <div class="text-center py-10 col-span-full">
@@ -62,7 +62,7 @@ function renderJobs(list) {
   updateCounts();
 }
 
-// ================= FILTER =================
+
 window.filterJobs = function (tab) {
   currentTab = tab;
 
@@ -71,7 +71,7 @@ window.filterJobs = function (tab) {
 
   renderJobs(filtered);
 
-  // ACTIVE TAB COLOR
+
   document.querySelectorAll(".btn").forEach(btn => {
     btn.classList.remove("btn-primary");
   });
@@ -81,21 +81,21 @@ window.filterJobs = function (tab) {
     .classList.add("btn-primary");
 };
 
-// ================= DELETE =================
+
 window.deleteJob = function (id) {
   const index = jobs.findIndex(job => job.id === id);
   jobs.splice(index, 1);
   filterJobs(currentTab);
 };
 
-// ================= STATUS UPDATE =================
+
 window.updateStatus = function (id, status) {
   const job = jobs.find(job => job.id === id);
   job.status = status;
   filterJobs(currentTab);
 };
 
-// ================= COUNT UPDATE =================
+
 function updateCounts() {
   document.getElementById("all-count").innerText = jobs.length;
 
@@ -106,5 +106,5 @@ function updateCounts() {
     jobs.filter(job => job.status === "rejected").length;
 }
 
-// ================= DEFAULT LOAD =================
+
 filterJobs("all");
