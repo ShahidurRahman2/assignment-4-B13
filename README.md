@@ -19,3 +19,9 @@ Event bubbling means the event starts from the clicked element and moves up to i
 ***. What is Event Delegation? Why is it useful?**
 
 Event delegation means adding one event listener to a parent instead of multiple child element
+
+***.Difference between preventDefault() and stopPropagation()**
+
+preventDefault() → stops default browser behavior.
+
+stopPropagation() → stops the event from bubbling up.
